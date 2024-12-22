@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   mainContainer: {
     height: 100,
     flexDirection: "row",
-    // borderWidth: 1,
+
     borderRadius: 20,
     backgroundColor: "#FFD1D1",
     shadowColor: "#000",
