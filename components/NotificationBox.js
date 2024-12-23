@@ -1,12 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const FoodCounterButton = () => {
+const NotificationBox = () => {
   return (
     <View>
-      <Text>FoodCounterButton</Text>
+      <Text>hello</Text>
     </View>
   );
 };
 
-export default FoodCounterButton;
+export default NotificationBox;

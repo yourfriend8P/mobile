@@ -1,6 +1,6 @@
 import { View, Text, TextInput, Image } from "react-native";
 import React from "react";
-import MyButton from "../components/MyButton";
+import MyButton from "../components/buttons/MyButton";
 import Logo from "../components/logo";
 import _link from "../components/_link";
 import { useRouter } from "expo-router";

@@ -137,7 +137,7 @@ const menu = () => {
 };
 
 const styles = StyleSheet.create({
-  container: { flex: 1, borderColor: "black", borderWidth: 1 },
+  container: { flex: 1, borderWidth: 0 },
   topContainer: {
     // borderColor: "black",
     // borderWidth: 1,
@@ -148,8 +148,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   bottomContainer: {
-    // borderColor: "black",
-    // borderWidth: 1,
+    borderWidth: 0,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
