@@ -4,6 +4,7 @@ import { useState } from "react";
 import { StyleSheet } from "react-native";
 import FoodQtyButton from "./buttons/FoodQtyButton";
 import ContainerButton from "./buttons/ContainerButton";
+import { Image } from "react-native";
 
 const Food_Container = ({ title, pts }) => {
   const [counterValue, setCounterValue] = useState(0);
@@ -21,7 +22,12 @@ const Food_Container = ({ title, pts }) => {
 
   return (
     <View style={containerStyle}>
-      <View style={imgcontainerStyle}></View>
+      <View style={imgcontainerStyle}>
+        <Image
+          source={require("../assets/images/coffee.png")} // Use require for local images
+          style={{ width: 80, height: 80 }}
+        />
+      </View>
       <View style={styles.funcContainer}>
         <View style={styles.funcConainter_left}>
           <View style={styles.funcContainer_left_up}>
@@ -82,11 +88,15 @@ const styles = StyleSheet.create({
   imgContainer: {
     // borderWidth: 1,
     flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
     borderRadius: 20,
     backgroundColor: "#E0E0E0",
   },
   imgContainerActive: {
     // borderWidth: 1,
+    alignItems: "center",
+    justifyContent: "center",
     flex: 1,
     borderRadius: 20,
     backgroundColor: "#ffffff",

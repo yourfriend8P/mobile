@@ -1,17 +1,20 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import React from "react";
 import { StyleSheet } from "react-native";
-import NotificationBox from "../../components/notificationBox";
+import NotifyBox from "../../components/NotifyBox";
 const notification = () => {
   return (
-    <View style={styles.mainContainer}>
-      <NotificationBox />
-    </View>
+    <ScrollView style={styles.ScrollContainer}>
+      <View style={styles.mainContainer}>
+        <NotifyBox inbox={"This is a notification"} />
+      </View>
+    </ScrollView>
   );
 };
 
 export default notification;
 
 const styles = StyleSheet.create({
-  mainContainer: { flex: 1, padding: 10, borderWidth: 1 },
+  ScrollContainer: { flex: 1, padding: 10, borderWidth: 0, gap: 15 },
+  mainContainer: { flex: 1, padding: 10, borderWidth: 0, gap: 15 },
 });
